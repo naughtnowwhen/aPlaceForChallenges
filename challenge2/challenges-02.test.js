@@ -84,9 +84,22 @@ setStatusAsAuthor(people);
 console.log(people[1].isAuthor) prints true
 ------------------------------------------------------------------------------------------------ */
 
+let arrOfBecomingAuthors = [];
+arrOfBecomingAuthors.push(
+  {name : 'birthNameOne'},
+  {name : 'birthNameMyMommaGaveMe'},
+  {name : 'aspiringAuthorWhoLacksAName'}
+);
+
 const setStatusAsAuthor = (people) => {
   // Solution code here...
-}
+  let authorStatus = 'isAuthor';
+  for (let personObj of people){
+    personObj[authorStatus] = true;
+  }
+};
+
+setStatusAsAuthor(arrOfBecomingAuthors);
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5
