@@ -7,11 +7,18 @@ CHALLENGE 1
 Write a function that appends ' The end.' to a string, and returns the modified string. The original source string should not be modified.
 
 ------------------------------------------------------------------------------------------------ */
+let s = 'the beginning';
 
 const appendTheEnd = (str) => {
-  // Solution code here...
+  str += ' The end.'; 
   return str;
-}
+};
+
+appendTheEnd(s);
+
+
+
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
@@ -26,9 +33,14 @@ appendFirstToLast(a);
 console.log(a) prints [1, 2, 3, 1]
 ------------------------------------------------------------------------------------------------ */
 
+let someArr = ['the first','shall become', 'the last','or shall it?'];
+
 const appendFirstToLast = (arr) => {
-  // Solution code here...
-}
+  arr.push(arr[0]);
+
+};
+
+appendFirstToLast(someArr);
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 3
